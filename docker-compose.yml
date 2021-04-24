@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    image: bechdel
+    volumes:
+      - ./data:/home/app_user/data
+      - ./src:/home/app_user/src
+    stdin_open: true
+    tty: true
