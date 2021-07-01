@@ -1,3 +1,5 @@
+.ipynb_checkpoints
+
 data/imdb/*
 data/bechdel_clean.tsv.gz
 data/bechdel_raw.tsv.gz
