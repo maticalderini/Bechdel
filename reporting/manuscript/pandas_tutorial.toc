@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Abstract}{3}
+\contentsline {section}{\numberline {2}Introduction}{3}
+\contentsline {section}{\numberline {3}Tutorial}{3}
+\contentsline {subsection}{\numberline {3.1}Setup}{3}
+\contentsline {subsection}{\numberline {3.2}Libraries and Paths}{3}
+\contentsline {subsection}{\numberline {3.3}test}{3}
+\contentsline {section}{\numberline {4}The DataFrame - Understanding the data container}{4}
+\contentsline {section}{\numberline {5}The Data - Cleaning to avoid future headaches}{4}

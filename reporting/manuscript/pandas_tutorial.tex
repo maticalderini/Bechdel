@@ -1,0 +1,115 @@
+\documentclass{article}
+
+%%%%% Packages %%%%%%
+\usepackage{authblk}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+%%%%% Listings Style %%%%%
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+
+\lstdefinestyle{mystyle}{
+	language=Python,
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegray},
+	keywordstyle=\color{deepblue},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codegreen},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=none,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2	
+}
+\lstset{style=mystyle}
+
+%%%%% Preamble %%%%%
+\title{Pandas Tutorial}
+\author[ ]{Calderini, Matias}
+\author[1]{X}
+\author[2]{X}
+\affil[1,2]{University of Ottawa}
+
+%%%%% Document %%%%%
+\begin{document}
+	\maketitle
+	\newpage
+	
+	\tableofcontents
+	\listoftables
+	\lstlistoflistings
+	\newpage
+	
+	%%%%% Abstract %%%%%
+	\section{Abstract}
+	
+	%%%%% Introduction %%%%%
+	\section{Introduction}
+	
+	%%%%% Main Body %%%%%
+	\section{Tutorial}
+	Neeed to rename, but essentially the main body of the text
+	
+	%%%%% Setup %%%%% 
+	\subsection{Setup}
+	 Introduce how to download and get started?
+	 
+	%%%%% Libraries and Paths %%%%%
+	\subsection{Libraries and Paths}
+	
+	%%%%% Reading and Saving Data
+	\subsection{test}
+	\begin{lstlisting}[caption=Sample]
+		import numpy as np
+		
+		def incmatrix(genl1,genl2):
+			m = len(genl1)
+			n = len(genl2)
+			M = None #to become the incidence matrix
+			VT = np.zeros((n*m,1), int)  #dummy variable
+			test = 'a string'
+			
+			#compute the bitwise xor matrix
+			M1 = bitxormatrix(genl1)
+			M2 = np.triu(bitxormatrix(genl2),1) 
+			
+			for i in range(m-1):
+				for j in range(i+1, m):
+					[r,c] = np.where(M2 == M1[i,j])
+				for k in range(len(r)):
+					VT[(i)*n + r[k]] = 1;
+					VT[(i)*n + c[k]] = 1;
+					VT[(j)*n + r[k]] = 1;
+					VT[(j)*n + c[k]] = 1;
+			
+			if M is None:
+				M = np.copy(VT)
+			else:
+				M = np.concatenate((M, VT), 1)
+				
+				VT = np.zeros((n*m,1), int)
+		
+		return M
+	\end{lstlisting}
+	
+	%%%%% Dataframe %%%%%
+	\section{The DataFrame - Understanding the data container}
+	
+	%%%%% Data %%%%%
+	\section{The Data - Cleaning to avoid future headaches}
+	\input{../tables/head}
+	
+	
+	
+\end{document}
