@@ -4,3 +4,7 @@ data/*
 data/imdb/*
 data/bechdel_clean.tsv.gz
 data/bechdel_raw.tsv.gz
+
+reporting/manuscript/*.log
+reporting/manuscript/*.pdf
+reporting/manuscript/*.synctex.gz
